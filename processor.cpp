@@ -4,10 +4,10 @@
 //#define mapSizeX ((((unsigned double)(1)<<16)-1))
 //#define mapSizeY ((((unsigned double)(1)<<16)-1))
 #define ll long long
-#define mapSizeX (8192) // blocks
-#define mapSizeY (8192) // blocks
+#define mapSizeX (1024) // blocks
+#define mapSizeY (1024) // blocks
 double blockL = 1000; // km, 1000 as minimum
-#define timeStep (3600) // s
+#define timeStep (60) // s
 #define G (6.67e21) //N*km^2/(10^20kg)
 #define Pi (acos(-1))
 #define planetNumber (8)
@@ -111,7 +111,7 @@ int main(){
     earth->y = 1000000/2;
     planets.push_back(*earth);
 
-    for(int i = 0; i < 100; i++){
+    for(int i = 0; i < 2; i++){
         fresh();
     }    
     // cout<<"done"<<endl;
